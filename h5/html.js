@@ -95,14 +95,14 @@ const content = script =>
         font-size: 18px;
       }
       
-      .button.clear {
-         right: 5%;
-        top: 2.5%;
+     .button.clear {
+         right: 15px;
+        top: 15px;
       }
     
       .button.save {
-        right: 5%;
-        bottom: 2.5%;
+        right: 15px;
+        bottom: 15px;
       }
       
     @media screen and (max-width: 1024px) {
