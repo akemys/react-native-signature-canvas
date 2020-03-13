@@ -64,11 +64,11 @@ const content = script =>
     
     .m-signature-pad--body {
       position: absolute;
-      left: 20px;
-      right: 20px;
-      top: 20px;
-      bottom: 60px;
-      border: 1px solid #f4f4f4;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border: none;
     }
     
     .m-signature-pad--body
@@ -81,49 +81,30 @@ const content = script =>
         border-radius: 4px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
       }
-    
-    .m-signature-pad--footer {
-      position: absolute;
-      left: 20px;
-      right: 20px;
-      bottom: 20px;
-      height: 40px;
-    }
-    
-    .m-signature-pad--footer
-      .description {
-        color: #C3C3C3;
-        text-align: center;
-        font-size: 1.2em;
-        margin-top: 1.8em;
-      }
-    
-    .m-signature-pad--footer
+ 
+  
       .button {
         position: absolute;
-        bottom: 0;
-        background-color: #3F99F7;
-        height: 32px;
         padding: 0 20px;
-        line-height: 32px;
         text-align: center;
-        color: #FFF;
+        color: black;
         border: 1px solid transparent;
         border-radius: 4px;
         outline: none;
         box-shadow: none;
+        font-size: 18px;
       }
-    
-    .m-signature-pad--footer
+      
       .button.clear {
-        left: 0;
+         right: 5%;
+        top: 2.5%;
       }
     
-    .m-signature-pad--footer
       .button.save {
-        right: 0;
+        right: 5%;
+        bottom: 2.5%;
       }
-    
+      
     @media screen and (max-width: 1024px) {
       .m-signature-pad {
         top: 0;
@@ -174,11 +155,8 @@ const content = script =>
     <div class="m-signature-pad--body">
       <canvas></canvas>
     </div>
-    <div class="m-signature-pad--footer">
-      <div class="description"><%description%></div>
-      <button type="button" class="button clear" data-action="clear"><%clear%></button>
+     <button type="button" class="button clear" data-action="clear"><%clear%></button>
       <button type="button" class="button save" data-action="save"><%confirm%></button>
-    </div>
   </div>
 
   <script>
