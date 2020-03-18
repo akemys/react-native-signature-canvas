@@ -69,6 +69,8 @@ const content = script =>
       top: 0;
       bottom: 0;
       border: none;
+      border: 1px dashed gray;
+      margin: 10% 15%;
     }
     
     .m-signature-pad--body
